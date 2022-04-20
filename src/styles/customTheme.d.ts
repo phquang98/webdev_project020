@@ -1,9 +1,7 @@
-// import original module declarations
 import "styled-components";
 
 import { customTheme } from ".";
 
-// and extend them!
 declare module "styled-components" {
   type TCustomTheme = typeof customTheme;
 

@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
-import MainPage from "../pages/Main.page";
+import MainPage from "../pages/MainPage";
 
 const AppRoute = (): JSX.Element => {
   return (
