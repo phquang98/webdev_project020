@@ -1,12 +1,18 @@
-import { GlobalStyles } from "./styles";
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
 
-const checkGitHooks = 1;
+import AppRoute from "./routes";
+import { customTheme, GlobalStyles } from "./styles";
 
 const App = (): JSX.Element => {
   return (
     <>
-      <GlobalStyles />
-      <div>Hello there!</div>
+      <ThemeProvider theme={customTheme}>
+        <BrowserRouter>
+          <GlobalStyles />
+          <AppRoute />
+        </BrowserRouter>
+      </ThemeProvider>
     </>
   );
 };

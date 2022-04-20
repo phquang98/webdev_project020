@@ -2,6 +2,17 @@ import { createGlobalStyle } from "styled-components";
 
 import robotoFont from "../assets/Roboto-Regular.ttf";
 
+export const customTheme = {
+  light: {
+    primary: "#01689b",
+    auxiliary: "#01689b"
+  },
+  dark: {
+    primary: "#000",
+    text: "#fff"
+  }
+};
+
 export const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: randomNameHere;
