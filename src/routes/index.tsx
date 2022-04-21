@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 
-import MainPage from "../pages/MainPage";
+import { StyledMainPage } from "../pages/MainPage/styles";
 
 const AppRoute = (): JSX.Element => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/" element={<StyledMainPage />}></Route>
       </Routes>
     </>
   );

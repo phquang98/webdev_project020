@@ -2,4 +2,5 @@
 
 # Notes
 
-- npm i styled-components + npm i -D @types/styled-components
+- `npm i styled-components` + `npm i -D @types/styled-components`
+- `npm i react-icons`

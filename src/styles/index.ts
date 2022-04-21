@@ -5,15 +5,14 @@ import robotoFont from "../assets/Roboto-Regular.ttf";
 export const customTheme = {
   light: {
     primary: "#01689b",
-    auxiliary: "#01689b"
+    auxiliary: "#01689b",
+    boldText: "#17628c"
   },
-  dark: {
-    primary: "#000",
-    text: "#fff"
-  }
+  defaultFontSize: "16px"
 };
 
 export const GlobalStyles = createGlobalStyle`
+  // define the font
   @font-face {
     font-family: randomNameHere;
     src: url(${robotoFont}) format('truetype');
@@ -22,13 +21,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: randomNameHere;
+    font-size: 16px;
     box-sizing: border-box;
     margin: 0;
   }
 
   body * {
-    font-family: randomNameHere;
+    font-family: randomNameHere;  // use the font
     box-sizing: border-box;
     margin: 0;
   }

@@ -5,6 +5,7 @@ import { customTheme } from ".";
 declare module "styled-components" {
   type TCustomTheme = typeof customTheme;
 
+  // should have just been export interface DefaultTheme extends TCustomTheme {} but will get warning
   export interface DefaultTheme extends TCustomTheme {
     uselessProp?: string;
   }

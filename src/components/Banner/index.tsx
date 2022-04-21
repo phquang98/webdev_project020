@@ -9,7 +9,7 @@ const Banner = ({ className, bannerText }: BannerProps): JSX.Element => {
   return (
     <>
       <div className={className}>
-        <h4>{bannerText}</h4>
+        <h5>{bannerText}</h5>
       </div>
     </>
   );
